@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+ A-Frame transforms for Hiro Marker
++---------+
+| +Y-axis | -> +X axis 
+|   Hiro  |
++---------+
+     |
+     V +Z axis
+Positive Y-axis rises up from the marker
+-->
 <html>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
@@ -7,11 +17,11 @@
     <a-scene embedded arjs>
       <a-marker preset="hiro" size="0.08" smooth="true">
         <!--X axis Test -->
-        <a-box color="red" depth="1" height="1" width="1" position="1 0 0" rotation="45 0 0"></a-box>
+        <a-box color="red" depth="1" height="1" width="1" position="1 0 0" rotation="20 0 0"></a-box>
         <!--Y axis Test -->
-        <a-box color="green" depth="1" height="1" width="1" position="0 1 0" rotation="0 45 0"></a-box>
+        <a-box color="green" depth="1" height="1" width="1" position="0 1 0" rotation="0 20 0"></a-box>
         <!--Z axis Test -->
-        <a-box color="blue" depth="1" height="1" width="1" position="0 0 1" rotation="0 0 45"></a-box>
+        <a-box color="blue" depth="1" height="1" width="1" position="0 0 1" rotation="0 0 20"></a-box>
         <a-text value="Hello, World!"></a-text>
         <!--<a-entity
           position="0 0 0"
