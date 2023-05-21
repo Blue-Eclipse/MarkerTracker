@@ -11,6 +11,8 @@ Positive Y-axis rises up from the marker
 
 Positive angle rotation direction can be found by using right hand thumb rule. Have the thumb parallel to the +ve direction of an axis.
 The direction the fingers as it wraps around the axis gives the positive rotation direction.
+
+Unit of position appears unaffected by marker size param.
 -->
 <html>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -19,11 +21,7 @@ The direction the fingers as it wraps around the axis gives the positive rotatio
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro" size="0.06" smooth="true">
-        <a-box color="red" depth="1" height="1" width="1" position="1 0 1"></a-box>
-        <a-box color="green" depth="1" height="1" width="1" position="-1 0 1"></a-box>
-        <a-box color="blue" depth="1" height="1" width="1" position="1 0 -1"></a-box>
-        <a-box color="yellow" depth="1" height="1" width="1" position="-1 0 -1"></a-box>
-        <a-text value="Hello, World!"></a-text>
+        <a-text value="Hello, World!" rotation="-90 0 0"></a-text>
         <!--<a-entity
           position="0 0 0"
           scale="0.05 0.05 0.05"
