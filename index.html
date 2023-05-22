@@ -20,17 +20,14 @@ Unit of position appears unaffected by marker size param.
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-
-
       <a-marker preset="hiro" size="0.06" smooth="true">
-       <a-sound src="Yota - Til the Night Fades Out.mp3)" autoplay="true"></a-sound> 
-        <a-image src="16-9aspect.png" rotation="-90 0 0" width="1.778" height="1"></a-image>
+        <a-image src="16-9aspect.png" rotation="-90 0 0" width="1.778" height="1"  animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image>
        <!--
        <a-assets>
        <video id="vid" src="bread.mp4"></video>
        </a-assets>
           <a-video src="#vid" rotation="-90 0 0" width="1.778" height="1"></a-video>
-       
+       <a-sound src="Yota - Til the Night Fades Out.mp3)" autoplay="true"></a-sound> 
         <a-text value="Hello, World!" rotation="-90 0 0"></a-text>-->
         <!--<a-entity
           position="0 0 0"
