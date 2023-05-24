@@ -43,17 +43,20 @@ Unit of position appears unaffected by marker size param.
       <a-marker preset="hiro" size="0.06" smooth="true">
        <a-plane id="ocPlane" height="1.5" width="1.5" rotation="-90 0 0" custom-material></a-plane>
        <a-entity
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
+          id="painting"
+          position="0 0.8 -0.6"
+          scale="0.02 0.02 0.02"
           gltf-model="Painting.glb"
         ></a-entity>
        <a-entity
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
+          id="eggman"
+          position="0 0.25 0"
+          scale="0.7 0.7 0.7"
           gltf-model="Eggman.glb"
+          animation="property: rotation; to: 0 360 0; loop: true; easing: 	linear; dur: 10000"
         ></a-entity>
-       <a-light type="point" color="gold" position="0 5 0"></a-light>
-       <a-sound src="url(Sanic_Paradise.mp3)" autoplay="true" loop="true"></a-sound> 
+       <a-light id="light" type="point" color="white" position="0 1.5 1.1"></a-light>
+       <a-sound id="sound" src="url(Sanic_Paradise.mp3)" autoplay="true" loop="true"></a-sound> 
        <!--
        <a-box color="tomato" depth="1" height="1" width="1"></a-box>
        <a-sound src="url(Yota - Til the Night Fades Out.mp3)" autoplay="true" loop="true"></a-sound> 
