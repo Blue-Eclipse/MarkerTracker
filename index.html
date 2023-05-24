@@ -42,9 +42,21 @@ Unit of position appears unaffected by marker size param.
     <a-scene embedded arjs log>
       <a-marker preset="hiro" size="0.06" smooth="true">
        <a-plane id="ocPlane" height="1.5" width="1.5" rotation="-90 0 0" custom-material></a-plane>
-       <a-box color="tomato" depth="1" height="1" width="1"></a-box>
-         <a-sound src="url(Yota - Til the Night Fades Out.mp3)" autoplay="true" loop="true"></a-sound> 
+       <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="Painting.glb"
+        ></a-entity>
+       <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="Eggman.glb"
+        ></a-entity>
+       <a-light type="point" color="gold" position="0 5 0"></a-light>
+       <a-sound src="url(Sanic_Paradise.mp3)" autoplay="true" loop="true"></a-sound> 
        <!--
+       <a-box color="tomato" depth="1" height="1" width="1"></a-box>
+       <a-sound src="url(Yota - Til the Night Fades Out.mp3)" autoplay="true" loop="true"></a-sound> 
        <a-image src="16-9aspect.png" rotation="-90 0 0" width="1.778" height="1"  animation="property: rotation; to: -90 360 0; loop: true; dur: 10000"></a-image>
        <a-assets>
        <video id="vid" src="bread.mp4"></video>
@@ -52,7 +64,7 @@ Unit of position appears unaffected by marker size param.
           <a-video src="#vid" rotation="-90 0 0" width="1.778" height="1"></a-video>
       
         <a-text value="Hello, World!" rotation="-90 0 0"></a-text>-->
-        <!--<a-entity
+        <a-entity
           position="0 0 0"
           scale="0.05 0.05 0.05"
           gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
