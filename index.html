@@ -41,15 +41,8 @@ Unit of position appears unaffected by marker size param.
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs log>
       <a-marker preset="hiro" size="0.06" smooth="true">
-       <a-plane id="ocPlane" height="1.5" width="1.5" rotation="-90 0 0" custom-material></a-plane>
-       <a-entity
-          id="dragon"
-          position="0 0.25 0"
-          scale="0.7 0.7 0.7"
-          gltf-model="DragonAttenuation.glb"
-          animation="property: rotation; to: 0 360 0; loop: true; easing: 	linear; dur: 10000"
-        ></a-entity>
-       <a-light id="light" type="point" color="white" position="0 1.5 1.1"></a-light>
+       <a-plane id="ocPlane" height="1.25" width="1.25" rotation="-90 0 0" custom-material></a-plane>
+        <a-box color="tomato" depth="1" height="1" width="1"></a-box>
        <!-- Sanic Scene
        <a-entity
           id="painting"
