@@ -39,13 +39,15 @@ Unit of position appears unaffected by marker size param.
 });
  </script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs log webxr="optionalFeatures: hit-test;" reflection="directionalLight:a-light#real-light;" ar-hit-test="target:#mybox;">
+    <a-scene embedded arjs log>
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
       <a-marker preset="hiro" size="0.06" smooth="true">
-       <a-plane id="ocPlane" height="1.4" width="1.4" rotation="-90 0 0" custom-material></a-plane>
-       <a-box id="mybox" color="tomato" depth="1" height="1" width="1"></a-box>
        <a-image src="Hiro_no border.png" rotation="-90 0 0" width="1" height="1"></a-image>
-       <a-light id="real-light" type="directional" position="1 1 1" intensity="0.5"></a-light>
+       <!--  -->
+       <a-plane id="outerocPlane1" height="0.4" width="1.4" rotation="-90 0 0" position="0 0 -0.5"></a-plane>
+       <a-plane id="outerocPlane2" height="0.6" width="0.4" rotation="-90 0 0" position="-0.5 0 0"></a-plane>
+       <a-plane id="outerocPlane3" height="0.6" width="0.4" rotation="-90 0 0" position="0.5 0 0"></a-plane>
+       <a-plane id="outerocPlane4" height="0.4" width="1.4" rotation="-90 0 0" position="0 0 0.5"></a-plane>
        <!--<a-plane id="ocPlane" height="1.4" width="1.4" rotation="-90 0 0" custom-material></a-plane>
        <a-box color="tomato" depth="1" height="1" width="1"></a-box>
        <a-entity geometry="primitive: plane; height: 1.4; width: 1.4" position="0 2 0"></a-entity>-->
