@@ -15,7 +15,7 @@ The direction the fingers as it wraps around the axis gives the positive rotatio
 Unit of position appears unaffected by marker size param.
 -->
 <html>
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
  <script>
@@ -41,6 +41,7 @@ Unit of position appears unaffected by marker size param.
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs log webxr reflection="directionalLight:#real-light" ar-hit-test="target:#mybox;">
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
+     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-marker preset="hiro" size="0.06" smooth="true">
        <a-plane id="ocPlane" height="1.4" width="1.4" rotation="-90 0 0" custom-material></a-plane>
        <a-box id="mybox" color="tomato" depth="1" height="1" width="1"></a-box>
