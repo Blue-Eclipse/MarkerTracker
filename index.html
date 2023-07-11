@@ -43,11 +43,25 @@ Unit of position appears unaffected by marker size param.
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
       <a-marker preset="hiro" size="0.06" smooth="true">
        <a-image src="Hiro_no border.png" rotation="-90 0 0" width="1" height="1"></a-image>
-       <!--  -->
-       <a-plane id="outerocPlane1" height="0.2" width="1.4" rotation="-90 0 0" position="0 0 -0.6"></a-plane>
-       <a-plane id="outerocPlane2" height="1" width="0.2" rotation="-90 0 0" position="-0.6 0 0"></a-plane>
-       <a-plane id="outerocPlane3" height="1" width="0.2" rotation="-90 0 0" position="0.6 0 0"></a-plane>
-       <a-plane id="outerocPlane4" height="0.2" width="1.4" rotation="-90 0 0" position="0 0 0.6"></a-plane>
+       <!-- Outer Occlusion Planes -->
+       <a-plane id="outerocPlane1" height="0.2" width="1.4" rotation="-90 0 0" position="0 0 -0.6" custom-material></a-plane>
+       <a-plane id="outerocPlane2" height="1" width="0.2" rotation="-90 0 0" position="-0.6 0 0" custom-material></a-plane>
+       <a-plane id="outerocPlane3" height="1" width="0.2" rotation="-90 0 0" position="0.6 0 0" custom-material></a-plane>
+       <a-plane id="outerocPlane4" height="0.2" width="1.4" rotation="-90 0 0" position="0 0 0.6" custom-material></a-plane>
+       <!-- Box Occlusion Planes -->
+       <a-plane id="boxocPlane1" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" ></a-plane>
+       <a-plane id="boxocPlane2" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" ></a-plane>
+       <a-plane id="boxocPlane3" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" ></a-plane>
+       <a-plane id="boxocPlane4" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" ></a-plane>
+       <a-plane id="boxocPlane5" height="1" width="1" rotation="-90 0 0" position="0 -1 0"></a-plane>
+       <!-- Box Planes -->
+       <a-plane id="boxPlane1" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" color="white"></a-plane>
+       <a-plane id="boxPlane2" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" color="white"></a-plane>
+       <a-plane id="boxPlane3" height="1" width="1" rotation="0 0 0" position="0 -0.5 0" color="white"></a-plane>
+       <a-plane id="boxPlane4" height="1" width="1" rotation="0 0 0" position="0 -0.5 0 "color="white"></a-plane>
+       <a-plane id="boxPlane5" height="1" width="1" rotation="-90 0 0" position="0 -1 0" color="white"></a-plane>
+       <!-- -->
+       <a-box color="tomato" depth="0.2" height="0.2" width="0.2"></a-box>
        <!--<a-plane id="ocPlane" height="1.4" width="1.4" rotation="-90 0 0" custom-material></a-plane>
        <a-box color="tomato" depth="1" height="1" width="1"></a-box>
        <a-entity geometry="primitive: plane; height: 1.4; width: 1.4" position="0 2 0"></a-entity>-->
