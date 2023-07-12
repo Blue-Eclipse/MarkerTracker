@@ -39,7 +39,8 @@ Unit of position appears unaffected by marker size param.
 });
  </script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs log webxr reflection="directionalLight:#real-light">
+    <a-scene embedded arjs log webxr="referenceSpaceType: local;" reflection="directionalLight:#real-light">
+     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
      <a-light id="real-light" type="directional" position="1 1 1" intensity="10"></a-light>
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
       <a-marker preset="hiro" size="0.06" smooth="true">
