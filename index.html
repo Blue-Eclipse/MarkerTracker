@@ -39,9 +39,7 @@ Unit of position appears unaffected by marker size param.
 });
  </script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs log webxr="referenceSpaceType: local;" reflection="directionalLight:#real-light">
-     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
-     <a-light id="real-light" type="directional" position="1 1 1" intensity="10"></a-light>
+    <a-scene embedded arjs log>
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
       <a-marker preset="hiro" size="0.06" smooth="true">
        <!--<a-image src="Hiro_no border.png" rotation="-90 0 0" width="1" height="1"></a-image>-->
@@ -64,7 +62,6 @@ Unit of position appears unaffected by marker size param.
        <a-plane id="boxPlane5" height="1" width="1" rotation="-90 0 0" position="0 -1 0" color="white"></a-plane>
        <!-- -->
        <a-box color="tomato" depth="0.2" height="0.2" width="0.2" rotation="45 45 45" position="0 -0.5 0"></a-box>
-       <a-box depth="1" height="1" width="1" material="shader:phong; specular: #ff08b1; reflectivity: 0.9; shininess: 30;"></a-box>
        <a-light id="light" type="point" color="white" position="0 -0.3 0"></a-light>
        <!--<a-plane id="ocPlane" height="1.4" width="1.4" rotation="-90 0 0" custom-material></a-plane>
        <a-box color="tomato" depth="1" height="1" width="1"></a-box>
