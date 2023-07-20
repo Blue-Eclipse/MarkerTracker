@@ -19,6 +19,13 @@ Unit of position appears unaffected by marker size param.
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
  <script>
+  AFRAME.registerComponent('log1',{
+   schema: {},
+   init: function(){
+    console.log(this);
+   }
+  });
+   
   AFRAME.registerComponent('custom-material', {
   schema: {
     // Add properties.
@@ -39,7 +46,7 @@ Unit of position appears unaffected by marker size param.
 });
  </script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs log>
+    <a-scene embedded arjs log log1>
      <!--<a-marker type="pattern" url="DenverBlack50_Pattern.patt">-->
       <a-marker preset="hiro" size="0.06" smooth="true">
        <!--<a-image src="Hiro_no border.png" rotation="-90 0 0" width="1" height="1"></a-image>-->
