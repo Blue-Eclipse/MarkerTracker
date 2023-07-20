@@ -22,7 +22,11 @@ Unit of position appears unaffected by marker size param.
   AFRAME.registerComponent('log1',{
    schema: {},
    init: function(){
-    console.log(this);
+    var sceneEl = document.querySelector('a-scene');
+    var els = sceneEl.querySelectorAll('*');
+    for(var i =0; i <els.length;i++){
+     console.log(els[i]);
+    }
    }
   });
    
